@@ -7,11 +7,8 @@ import { Blog } from "../../../types/Blogs";
 import Image from "next/image";
 import Link from "next/link";
 
-interface Props {
-  blogs: Blog[];
-}
 
-const ConnectPage = ({ }: Props) => {
+const ConnectPage = ({ }) => {
   const [blogs, setBlogs] = useState<Blog[]>([]);
 
   useEffect(() => {
