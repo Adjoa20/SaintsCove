@@ -25,7 +25,7 @@ export async function getBlogs(): Promise<Blog[]> {
     return response;
 }
 
-export async function getBlog(slug:string): Promise<Blog[]> {
+export async function getBlog(slug:string): Promise<Blog> {
     const query = `*[_type == "blog" && slug.current == $slug][0]{
         _id, 
         _createdAt,
@@ -47,4 +47,3 @@ export function urlFor(source: any) {
     }
     return '';
 }
-

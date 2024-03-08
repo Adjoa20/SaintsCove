@@ -4,6 +4,19 @@ import { PortableText } from "@portabletext/react";
 import Navbar from "../../../../components/NavBar";
 import Link from "next/link";
 
+interface Blog {
+    name: string;
+    description: string;
+    content: any;
+    image?: {
+        _type: string;
+        asset: {
+            _ref: string;
+            _type: string;
+        }
+    }
+}
+
 type Props = {
     params: { content: string }
 }
@@ -11,7 +24,7 @@ type Props = {
 export default async function Blog({ params }: Props) {
     const slug = params.content;
 
-    const content = await getBlog(slug)
+    const content = await getBlog(slug);
 
     return (
         <div className="bg-connectbg bg-cover bg-fixed w-full h-full flex flex-col items-center">
@@ -46,10 +59,5 @@ export default async function Blog({ params }: Props) {
         </div>
     )
 }
-
-
-
-
-
 
 

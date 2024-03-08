@@ -7,8 +7,7 @@ import { Blog } from "../../../types/Blogs";
 import Image from "next/image";
 import Link from "next/link";
 
-
-const ConnectPage = ({ }) => {
+const ConnectPage = () => {
   const [blogs, setBlogs] = useState<Blog[]>([]);
 
   useEffect(() => {
