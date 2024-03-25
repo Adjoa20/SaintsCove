@@ -25,7 +25,7 @@ const Navbar = () => {
         <div className="hidden lg:flex lg:flex-grow justify-end">
             <Link href="/about" className="flex mt-4 lg:mt-0 text-black hover:text-zinc-400 transition-colors mr-4 font-bold justify-between items-center">About/Missions</Link>
             <Link href="/connect" className="flex mt-4 lg:mt-0 text-black hover:text-zinc-400 transition-colors mr-4 font-bold justify-between items-center">Connect</Link>
-            <Link href="/media" className="flex mt-4 lg:mt-0 text-black hover:text-zinc-400 transition-colors mr-4 font-bold justify-between items-center">Media</Link>
+            {/* <Link href="/media" className="flex mt-4 lg:mt-0 text-black hover:text-zinc-400 transition-colors mr-4 font-bold justify-between items-center">Media</Link> */}
             <Link href="/team" className="flex mt-4 lg:mt-0 text-black hover:text-zinc-400 transition-colors mr-4 font-bold justify-between items-center">Meet The Team</Link>
             <Link href="/admin" className="flex mt-4 lg:mt-0 text-black hover:text-zinc-400 transition-colors mr-4 font-bold justify-between items-center">Admin</Link>
         </div>
